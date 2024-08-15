@@ -1,0 +1,125 @@
+.posts{
+    width: 100%;
+    gap: .75rem;
+    margin-top: 1.5rem;
+}
+
+.post{
+    padding: 1.5rem;
+    border: solid .0625rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 100%;
+    gap: .5rem;
+    transition: all .24s ease-in-out;
+    color: black;
+}
+
+.post:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: solid .0625rem rgba(0, 0, 0, 0.4);
+}
+
+.post__title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.post__text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.post__detail{
+    gap: 1rem;
+}
+
+.post__detail-comments{
+    gap: .25rem;
+}
+
+.post__detail-comment{
+    gap: .25rem;
+    padding: 1.5rem;
+    border-bottom: .0625rem solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.post__detail-comment-email{
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+}
+.post__detail-comment-name{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+.post__detail-comment-body{
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.post__detail-comments-title{
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.post__detail-user{
+    padding-left: 1.5rem;
+}
+
+.post__detail-user-name{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.post__detail-user-email, .post__detail-user-city, .post__detail-user-phone{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.613);
+}
+
+.post__detail-user-email span, .post__detail-user-city span, .post__detail-user-phone span{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.post__detail-body{
+    padding: 1.5rem;
+    border: solid .0625rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.post__detail-body-title{
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.post__detail-body-text{
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 425px) {
+    .post__detail-body, .post__detail-comment{
+        padding: 1rem;
+    }
+    .post__detail-user, .post__detail-comments-title{
+        padding-left: 1rem;
+    }
+}
